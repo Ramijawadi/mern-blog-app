@@ -9,8 +9,6 @@ const path = "http://localhost:4000/register" ;
 
  e.preventDefault();
 
-
-
   const response = await fetch(path , {
     method: 'POST' , 
     body:JSON.stringify({username , password}),
@@ -20,7 +18,7 @@ const path = "http://localhost:4000/register" ;
    })
 if(response.status === 200 ) {
 
-  alert("resgister suceed ")
+  alert("resgister succeed ")
 }
 else {
   alert('regsitartion failed ')
